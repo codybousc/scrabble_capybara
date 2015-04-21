@@ -2,12 +2,18 @@ require('rspec')
 require('scrabble_score')
 
 # return a scrabble score for a letter
-# add the score of each letter
+# returns an array of each letter score in a word
+# returns a scrabble score for a word
 
 
 
 describe('String#scrabble_score') do
   it("returns a scrabble score for a letter") do
-    expect("A".scrabble_score()).to(eq(1))
+    expect("a".scrabble_score()).to(eq([1]))
   end
+
+  it("returns an array of each letter score in a word") do
+    expect("grow".scrabble_score()).to(eq([2, 1, 1, 4]))
+  end
+
 end
