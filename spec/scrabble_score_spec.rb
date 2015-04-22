@@ -1,5 +1,5 @@
 require('rspec')
-require('scrabble_score')
+require('./lib/scrabble_score')
 
 # return a scrabble score for a letter
 # returns a scrabble score for a word
